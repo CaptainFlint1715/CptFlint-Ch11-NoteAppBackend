@@ -42,6 +42,10 @@ app.get('/assets/js/index.js', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'assets', 'css', 'styles.css'));
   });
 
+  app.get('/favicon.ico', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'favicon.ico'));
+  });
+
 
 // GET Route for homepage
 app.get('*', (req, res) =>

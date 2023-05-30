@@ -34,16 +34,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'))
 
 app.get('/assets/js/index.js', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'assets', 'js', 'index.js'));
+    res.sendFile(path.join(__dirname, 'assets', 'js', 'index.js'));
   });
   
   // Route for serving CSS file
   app.get('/assets/css/styles.css', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'assets', 'css', 'styles.css'));
+    res.sendFile(path.join(__dirname, 'assets', 'css', 'styles.css'));
   });
 
   app.get('/favicon.ico', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'favicon.ico'));
+    res.sendFile(path.join(__dirname, 'favicon.ico'));
   });
 
 
@@ -57,9 +57,7 @@ app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, 'notes.html'))
 );
 
-app.listen(PORT, () =>
-    console.log(`App listening at http://localhost:${PORT} 🚀`)
-);
+
 
 
 
@@ -100,3 +98,7 @@ app.post('/api/notes', (req, res) => {
         res.json('Error in posting note');
     }
 });
+
+app.listen(PORT, () =>
+    console.log(`App listening at http://localhost:${PORT} 🚀`)
+);

@@ -33,3 +33,9 @@ NA
 'https://github.com/CaptainFlint1715'
 
 chanseshirley123@gmail.com
+
+https://sleepy-eyrie-70147.herokuapp.com/
+
+<img src="./assets/images/notehome.png" alt="homepage">
+
+<img src="./assets/images/notetaker.png" alt="notes page">
